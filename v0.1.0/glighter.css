@@ -1,0 +1,55 @@
+body{
+padding:0;
+margin:0;
+font-family:微软雅黑;
+}
+.glighter_table{
+	font-size:14px;
+	padding:0px;
+	background:#fff;
+	border:0;
+	border-collapse:collapse;
+}
+.glighter_string{
+	color:#F18900;
+}
+.glighter_number{
+	color:#CC3366;
+}
+.glighter_common_tag{
+	color:#204792;
+}
+.glighter_property{
+	color:#738D00;
+}
+.glighter_td_index{
+	background:#E4E4E4;
+	padding:3px 8px;
+	text-align:right;
+	color:#999;
+	border:0;
+	-webkit-user-select:none; 
+	-moz-user-select:none; 
+	-ms-user-select:none; 
+	user-select:none;
+	vertical-align:top;
+}
+.glighter_td_code{
+	padding:3px 8px;
+	word-break:break-all;
+	vertical-align:top;
+}
+.glighter_comment{
+	padding:0;
+	margin:0;
+	display:inline-black;
+	color:#A2A2A2;
+}
+.glighter_space1{
+	display:inline-block;
+	width:10px;
+}
+.glighter_space4{
+	display:inline-block;
+	width:40px;
+}
