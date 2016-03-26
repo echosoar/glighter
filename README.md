@@ -14,7 +14,7 @@
 	* 单标签 如：&lt;br /&gt;
 	* 单标签携带属性 如：&lt;img src="http://iwenku.net" alt="glighter" /&gt;
 	* 双标签 如：&lt;b&gt;Glighter&lt;/b&gt;
-	* 双标签携带属性 如：&lt;a href="http://iwenku.net"&gt;Glighter&lt;/a&gt;
+	* 双标签携带属性 如：&lt;a href="http://iwenku.net" &gt; Glighter &lt;/a&gt;
 * 注释
 	* 使用 &lt;!-- --&gt; 进行的单行和多行注释
 
