@@ -29,6 +29,5 @@ glighter({
 });
 </script>
 ```
-	
-´«ËÍÃÅ->[Gdivider 0.1.0]https://github.com/echosoar/glighter/tree/master/v0.1.0)
+
 ***
