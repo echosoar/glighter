@@ -11,16 +11,16 @@
 ####支持的HTML内容
 
 * 标签
-	* 单标签 如：<br />
-	* 单标签携带属性 如：<img src="http://iwenku.net" alt="glighter" />
-	* 双标签 如：<b>Glighter</b>
-	* 双标签携带属性 如：<a href="http://iwenku.net">Glighter</a>
+	* 单标签 如：&lt;br /&gt;
+	* 单标签携带属性 如：&lt;img src="http://iwenku.net" alt="glighter" /&gt;
+	* 双标签 如：&lt;b&gt;Glighter&lt;/b&gt;
+	* 双标签携带属性 如：&lt;a href="http://iwenku.net"&gt;Glighter&lt;/a&gt;
 * 注释
-	* 使用 <!-- --> 进行的单行和多行注释
+	* 使用 &lt;!-- --&gt; 进行的单行和多行注释
 
 #### 用法
 
-```html & javascript
+```html
 <script src="glighter.js"></script>
 <script>
 glighter({
