@@ -24,16 +24,13 @@ Website : http://iwenku.net
 		html:[
 			/&lt;([\/]?\w*?)(?:#GLighter_Space#|#GLighter_T#)*([\/]{0,1})&gt;/g,
 			/&lt;([\/]?\w*?)(?:#GLighter_Space#|#GLighter_T#){1,}(.*?)([\/]{0,1})&gt;/g
-			
 			],
-			
 		htmlTo:[
 			'<span class="glighter_common_tag">&lt;$1$2&gt;</span>',
 			'<span class="glighter_common_tag">&lt;$1</span>#GLighter_Space#$2<span class="glighter_common_tag">$3&gt;</span>',
 			]
 	};
-	
-	
+
 	var isHavePropertyHTMLExp=/&lt;(?:\w*?)(?:#GLighter_Space#|#GLighter_T#){1,}(.*?)(?:[\/]{0,1})&gt;/g;
 	
 	var glighter=function(options){
@@ -53,7 +50,6 @@ Website : http://iwenku.net
 		
 		initExpExec();// 初始化替换操作
 		
-		
 		languageCommentsExec();//语言注释替换
 		
 		commentSplit();//注释分离
@@ -63,8 +59,6 @@ Website : http://iwenku.net
 		}
 		
 		languageExec();
-		
-		
 		
 		toResult();
 	}
@@ -112,18 +106,13 @@ Website : http://iwenku.net
 						var temNextLineData=arr[0].substring(nowIndex+temPropertyLine[1].length);
 						temPropertyLine[1]=temPropertyLine[1].replace(/([\w-_]+)=(.*?)(#GLighter_Space#|$)/g,'<span class="glighter_property">$1</span>=<span class="glighter_string">$2</span>$3').replace(/#GLighter_Space#([\w-_]+)(#GLighter_Space#|$)/g,'#GLighter_Space#<span class="glighter_property">$1</span>$2');
 						arr[0]=arr[0].substring(0,nowIndex)+temPropertyLine[1]+temNextLineData;
-						
 					}
-					
-					
 				}
 			}
 		});
 	}
 	
-	
 	function toResult(){
-		
 		var lineNum=1;
 		var temResStr="";
 		for(var chunk in dataStatus){

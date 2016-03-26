@@ -6,7 +6,7 @@ font-family:微软雅黑;
 .glighter_table{
 	font-size:14px;
 	padding:0px;
-	background:#fff;
+	background:#F7F7F7;
 	border:0;
 	border-collapse:collapse;
 }
@@ -23,10 +23,10 @@ font-family:微软雅黑;
 	color:#738D00;
 }
 .glighter_td_index{
-	background:#E4E4E4;
+	background:#E8E8FF;
 	padding:3px 8px;
 	text-align:right;
-	color:#999;
+	color:#AAA;
 	border:0;
 	-webkit-user-select:none; 
 	-moz-user-select:none; 
