@@ -5,15 +5,42 @@
 	Thanks!
 	Glighter v0.1.0
 --&gt;
-&lt;h1&gt;Github:https://github.com/echosoar/glighter/&lt;/h1&gt;  
+&lt;h1&gt;Github:https://github.com/echosoar/glighter/&lt;/h1&gt;  &lt;!-- test--&gt;
 &lt;br    /&gt;  
 &lt;a href="http://iwenku.net"&gt;Author's blog&lt;/a&gt;
+
+function ajaxByscroll(){
+	var tem_wz=getScrollTop();
+	
+	var tem_height=Math.ceil(tol_mol_itemnum[no_mol_id]/num);
+	var tem_tolheight=com_one_width*(tem_height-1);
+	var jian=tem_tolheight-tem_wz;
+	if(document.documentElement.clientHeight+tem_wz>tem_tolheight){
+		if(!is_loading_new){
+			is_loading_new=true;
+			ajaxloadbyid(no_mol_id,tol_mol_itemnum[no_mol_id]);
+		}
+	}else{
+		is_loading_new=false;
+	}
+}
+
+.glighter_table{
+	font-size:14px;
+	padding:0px;
+	background:#F7F7F7;
+	border:0;
+	border-collapse:collapse;
+}
+.glighter_string{
+	color:#F18900;
+}
 
 </div>
 <script src="glighter.js"></script>
 <script>
 glighter({
 	target:document.getElementById("code"),
-	language:"html"
+	language:"html|javascript|css"
 });
 </script>
