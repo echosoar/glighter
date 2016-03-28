@@ -7,7 +7,7 @@
 
 ###V0.1.0
 ***
-*支持HTML代码*
+*支持HTML/CSS/Javascript代码*
 ####支持的HTML内容
 
 * 标签
@@ -18,6 +18,20 @@
 * 注释
 	* 使用 &lt;!-- --&gt; 进行的单行和多行注释
 
+####支持的CSS内容
+	
+	对属性和属性值能够进行高亮。
+	
+	对于颜色值会根据颜色值进行高亮变化。
+
+####支持的Javascript内容
+
+* 函数
+* 属性值
+* 条件判断语句
+* return、var、alert等关键字
+* 布尔值
+	
 #### 用法
 
 ```html
@@ -25,7 +39,7 @@
 <script>
 glighter({
 	target:document.getElementById("code"),
-	language:"html"
+	language:"html|css|javascript"
 });
 </script>
 ```
